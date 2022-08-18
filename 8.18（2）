@@ -12,3 +12,5 @@ int main()
     printf("%s\n", arr2);
 
     return 0;
+    }
+    //字符串练习
