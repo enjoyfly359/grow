@@ -1,0 +1,23 @@
+# grow
+`#define _crt_secure_no_warnings 1`
+
+`#include <stdio.h>`
+
+`int main()`
+
+`{`
+	`int line = 0;`
+    `printf ("开始学习\n");`
+
+```
+while (line < 20000)
+{
+    printf("写出代码\n");
+    line++;
+}
+printf("有所成就");
+return 0; 
+```
+
+`}`
+
