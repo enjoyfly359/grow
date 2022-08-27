@@ -1,0 +1,30 @@
+# grow
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+
+struct book
+{
+char name[20];
+short price;
+};
+
+int main()
+{
+struct book b1 = { “洛基启示录”,39 };
+struct book* pb = &b1;
+strcpy( b1.name,“乐子”);//字符串拷贝从而达到转化的目的
+printf(“%s\n”, pb->name);//运用了指针
+printf(“%d\n”, pb->price);
+b1.price = 37;//直接转化
+printf(“%d\n”, pb->price);
+
+ //   printf("%s\n", b1.name);//不用指针的话用这个‘.’
+ //   printf("%d\n", b1.price);
+
+return 0;
+}
+-----------------------------------
+©著作权归作者所有：来自51CTO博客作者洛飛Loki的原创作品，请联系作者获取转载授权，否则将追究法律责任
+结构体初学
+https://blog.51cto.com/u_15755457/5616066
