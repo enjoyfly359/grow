@@ -1,0 +1,19 @@
+`int main()`
+
+`{`
+
+```c
+int ch =0;
+while ((ch = getchar()) != EOF)//想停止需要ctrl + Z
+{
+	putchar(ch);
+}
+```
+
+``	
+
+```C
+return 0;
+```
+
+`}`//输出输入练习
