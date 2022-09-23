@@ -1,0 +1,39 @@
+//qs
+//找到具有给定数字总和 s 的最小数字，使得其中的所有数字都是不同的（即所有数字都是唯一的）
+
+
+//ans
+# grow
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main()
+{
+    int t= 0 ;
+    scanf("%d", &t);
+    while (t--)
+    {
+        int arr[10] = { 0 }, n;
+        int l = 9;
+        scanf("%d", &n);
+        while (l > 0 || n > 0)
+            if (n > l)
+            {
+                arr[l] = 1;
+                n -= l;
+                l--;
+            }
+            else
+            {
+                arr[n] = 1;
+                break;
+            }
+        int ans = 0;
+        for (int i = 1; i < 10; i++)
+          if (arr[i])
+                ans = ans * 10 + i;
+        printf("%d\n", ans);
+
+    }
+    return 0;
+}
